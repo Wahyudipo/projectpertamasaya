@@ -1,0 +1,135 @@
+*{
+	
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+body{
+	font-family: 'poppins', sans-serif;
+	background-color: lightblue;
+	color:#fff;
+	min-height: 5000px;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.4rem 7%;
+	background-color: rgb(1, 1, 1, 0.8);
+	border-bottom: 1px solid #513c28;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+.navbar .navbar-logo
+{
+	font-size: 2rem;
+	font-weight: 700;
+	color:green ;
+}
+.navbar .navbar-nav a{
+	color:green;
+	display: inline-block;
+	font-size: 1.2rem;
+	margin: 0.4rem;
+}
+.navbar .navbar-nav a:hover{
+color: skyblue;
+}
+.navbar .navbar-nav a::after
+{
+	content: '';
+	display: block;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.1rem solid brown;
+	transform: scaleX(0);
+	transition: 0.2s linear;
+}
+	.navbar .navbar-nav a:hover:after{
+		transform: scaleX(0.5);
+	}
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background-image: url(../IMG/taman.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.hero::after{
+content: '';
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(0deg, rgba(1, 1, 3, 1)3%, rgba(225, 225, 225, 0)25%);
+}
+.hero .content{
+	padding: 1.4rem 7%;
+	max-width: 60rem;
+}
+.hero .content h1{
+	font-size: 2.5rem;
+	color: greenyellow;
+	text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+	line-height: 1.2;
+}
+.hero .content .cta {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	color: black;
+	background-color: brown;
+	border-radius: 0.5rem;
+	box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.about, .fasilitas, .contact, .dt_buah {
+	padding: 6.5rem 7% 1.4rem;
+}
+.about {
+	min-height: 100vh;
+	display: flex;
+	background-image: url(../IMG/taman2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.about h2, .fasilitas h2, .contact h2, .dt_buah h2{
+	color: green;
+	text-align: center;
+	font-size: 2.6rem;
+	margin-bottom: 5rem;
+}
+.fasilitas row{
+display: flex;
+flex-wrap: wrap;
+margin-top: 5rem;
+justify-content: center;
+}
+.fasilitas .row .fasilitas-card {
+	color: green;
+}
+.fasilitas .row .fasilitas-card IMG{
+	background-image: url(IMG/taman2.jpg);
+}
+.fasilitas .row .fasilitas-card .fasilitas-card-title{
+	margin-top: 1rem auto 0.5rem;
+}
+.contact .row{
+	display: flex;
+	margin-top: 2rem;
+	background-color: #222;
+	flex-wrap: wrap;
+}
+.contact .rom .map {
+	flex-wrap: 1 1 45rem;
+	width: 100%;
+	object-fit: cover;
+}
